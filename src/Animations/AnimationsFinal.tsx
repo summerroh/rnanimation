@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { StyleSheet, View } from "react-native";
 import {
   Clock,
-  Easing,
   Value,
   and,
   block,
@@ -15,6 +14,7 @@ import {
   stopClock,
   timing,
   useCode,
+  EasingNode,
 } from "react-native-reanimated";
 import { useClock, useValue } from "react-native-redash";
 import ChatBubble from "./ChatBubble";
@@ -38,7 +38,7 @@ const runTiming = (clock: Clock) => {
   const config = {
     toValue: new Value(1),
     duration: 3000,
-    easing: Easing.inOut(Easing.ease),
+    easing: EasingNode.inOut(EasingNode.ease),
   };
   return block([
     cond(
