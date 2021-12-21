@@ -1,3 +1,6 @@
+#유튜브 링크
+https://www.youtube.com/watch?v=wEVjaXK4sYQ&t=162s
+
 # Learn React Native Gestures and Animations
 
 Materials from the declarative gestures and animations workshop for freeCodeCamp.
